@@ -1,14 +1,14 @@
 services:
     app1:
-        image: i:app1
+        image: repo:app1
         hostname: app1
     app2:
-        image: i:app2
+        image: repo:app2
         hostname: app2
     proxy:
-        image: i:proxy
+        image: repo:proxy
         ports:
-        - "8000:8000"
+        - "443:443"
         depends_on:
         - app1
         - app2
