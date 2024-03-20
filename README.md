@@ -6,7 +6,7 @@ openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout nginx-selfsigned.key
 Once you have the certificate, just run `./build_and_run.sh`.
 
 
-To export the certificate to ´.pfx´, just run:
+To export the certificate to `.pfx`, just run:
 ```
 openssl pkcs12 -export -out nginx-selfsigned.pfx -inkey nginx-selfsigned.key -in nginx-selfsigned.crt
 ```
